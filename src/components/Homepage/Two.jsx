@@ -15,7 +15,7 @@ const fadeInFromRight = {
 
 const Two = () => {
     return (
-        <div className="space-y-10 px-4 md:px-8">
+        <div className="space-y-10 px-4 md:px-8 lg:px-16">
             {/* First Card */}
             <motion.div 
                 className="card flex flex-col lg:flex-row bg-base-300 shadow-xl"
@@ -27,20 +27,20 @@ const Two = () => {
                     <Image 
                         src="/assets/images/about_us/root.jpg"
                         alt="Example Image"
-                        width={500} 
-                        height={50} 
-                        className="w-full h-full object-cover"
+                        width={600} 
+                        height={400} 
+                        className="w-full h-auto object-cover"
                         priority 
                     />
                 </motion.div>
-                <motion.div className="card-body w-full lg:w-1/2" variants={fadeInFromRight}>
-                    <h2 className="card-title text-lg md:text-2xl">Résidentiel</h2>
-                    <p>Installations Electriques.</p>
-                    <p>Mise en lumières</p>
-                    <p>Intégration de systèmes connectés.</p>
-                    <p>Réception TVSAT Starlink.</p>
-                    <p>Intrusion.</p>
-                    <p>Incendie</p>
+                <motion.div className="card-body w-full lg:w-1/2 p-6" variants={fadeInFromRight}>
+                    <h2 className="card-title text-xl md:text-2xl lg:text-3xl mb-4">Résidentiel</h2>
+                    <p className="text-sm md:text-base lg:text-lg">Installations Electriques.</p>
+                    <p className="text-sm md:text-base lg:text-lg">Mise en lumières</p>
+                    <p className="text-sm md:text-base lg:text-lg">Intégration de systèmes connectés.</p>
+                    <p className="text-sm md:text-base lg:text-lg">Réception TVSAT Starlink.</p>
+                    <p className="text-sm md:text-base lg:text-lg">Intrusion.</p>
+                    <p className="text-sm md:text-base lg:text-lg">Incendie</p>
                 </motion.div>
             </motion.div>
 
@@ -55,18 +55,18 @@ const Two = () => {
                     <Image 
                         src="/assets/images/about_us/root2.jpg"
                         alt="Example Image"
-                        width={400} 
-                        height={200} 
-                        className="w-full h-full object-cover"
+                        width={600} 
+                        height={400} 
+                        className="w-full h-auto object-cover"
                         priority 
                     />
                 </motion.div>
-                <motion.div className="card-body w-full lg:w-1/2" variants={fadeInFromLeft}>
-                    <h2 className="card-title text-lg md:text-2xl">Tertiaire</h2>
-                    <p>Installations Electriques</p>
-                    <p>Incendie</p>
-                    <p>Intrusion</p>
-                    <p>Câblage réseaux</p>
+                <motion.div className="card-body w-full lg:w-1/2 p-6" variants={fadeInFromLeft}>
+                    <h2 className="card-title text-xl md:text-2xl lg:text-3xl mb-4">Tertiaire</h2>
+                    <p className="text-sm md:text-base lg:text-lg">Installations Electriques</p>
+                    <p className="text-sm md:text-base lg:text-lg">Incendie</p>
+                    <p className="text-sm md:text-base lg:text-lg">Intrusion</p>
+                    <p className="text-sm md:text-base lg:text-lg">Câblage réseaux</p>
                 </motion.div>
             </motion.div>
         </div>
