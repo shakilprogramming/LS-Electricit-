@@ -1,26 +1,14 @@
+// shared/components/Navbar.jsx
 "use client"; // Mark this as a Client Component
-import { useEffect, useState } from "react";
+ // Adjust the path as needed
 import Image from "next/image";
 import Link from "next/link";
-import { Sun, Moon } from "lucide-react"; // Icons for theme toggle
+import { Sun, Moon } from "lucide-react"; 
+import { useTheme } from '../shared/context/ThemeContext.jsx';
+// Icons for theme toggle
 
 const Navbar = () => {
-    const [theme, setTheme] = useState("light"); // Default theme
-
-    // Load theme from localStorage on component mount
-    useEffect(() => {
-        const savedTheme = localStorage.getItem("theme") || "light";
-        setTheme(savedTheme);
-        document.documentElement.setAttribute("data-theme", savedTheme); // Apply the theme
-    }, []);
-
-    // Toggle theme function
-    const toggleTheme = () => {
-        const newTheme = theme === "light" ? "dark" : "light"; // Switch between light and dark
-        setTheme(newTheme);
-        localStorage.setItem("theme", newTheme); // Save theme to localStorage
-        document.documentElement.setAttribute("data-theme", newTheme); // Apply the new theme
-    };
+    const { theme, toggleTheme } = useTheme(); // Use the theme context
 
     const navItems = [
         { title: "Home", path: "/" },
@@ -29,7 +17,7 @@ const Navbar = () => {
     ];
 
     return (
-        <nav className="navbar fixed top-0 z-50 bg-black/40 backdrop-blur-sm w-full">
+        <nav className="navbar fixed top-0 z-10 bg-black/40 backdrop-blur-sm w-full">
             <div className="container mx-auto flex items-center justify-between px-4 md:px-8 py-2">
                 {/* Logo and Brand Name */}
                 <div className="flex items-center">

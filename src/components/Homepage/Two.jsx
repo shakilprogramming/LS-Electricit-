@@ -1,7 +1,9 @@
-"use client";  // Required for Next.js App Router
-
+"use client"; // Required for Next.js App Router
+ // Adjust the path as needed
 import Image from 'next/image';
 import { motion } from "framer-motion";
+import { useTheme } from '@/components/shared/context/ThemeContext';
+
 
 const fadeInFromLeft = {
   hidden: { opacity: 0, x: -100 },
@@ -14,11 +16,13 @@ const fadeInFromRight = {
 };
 
 const Two = () => {
+    const { theme } = useTheme(); // Access the theme from the context
+
     return (
-        <div className="space-y-10 px-4 md:px-8 lg:px-16">
+        <div className={`space-y-10 px-4 md:px-8 lg:px-16 ${theme === "light" ? "bg-white" : "bg-gray-900"}`}>
             {/* First Card */}
             <motion.div 
-                className="card flex flex-col lg:flex-row bg-base-300 shadow-xl"
+                className={`card flex flex-col lg:flex-row ${theme === "light" ? "bg-white" : "bg-gray-800"}`}
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true, amount: 0.2 }}
@@ -34,19 +38,19 @@ const Two = () => {
                     />
                 </motion.div>
                 <motion.div className="card-body w-full lg:w-1/2 p-6" variants={fadeInFromRight}>
-                    <h2 className="card-title text-xl md:text-2xl lg:text-3xl mb-4">Résidentiel</h2>
-                    <p className="text-sm md:text-base lg:text-lg">Installations Electriques.</p>
-                    <p className="text-sm md:text-base lg:text-lg">Mise en lumières</p>
-                    <p className="text-sm md:text-base lg:text-lg">Intégration de systèmes connectés.</p>
-                    <p className="text-sm md:text-base lg:text-lg">Réception TVSAT Starlink.</p>
-                    <p className="text-sm md:text-base lg:text-lg">Intrusion.</p>
-                    <p className="text-sm md:text-base lg:text-lg">Incendie</p>
+                    <h2 className={`card-title text-xl md:text-2xl lg:text-3xl mb-4 ${theme === "light" ? "text-black" : "text-white"}`}>Résidentiel</h2>
+                    <p className={`text-sm md:text-base lg:text-lg ${theme === "light" ? "text-black" : "text-white"}`}>Installations Electriques.</p>
+                    <p className={`text-sm md:text-base lg:text-lg ${theme === "light" ? "text-black" : "text-white"}`}>Mise en lumières</p>
+                    <p className={`text-sm md:text-base lg:text-lg ${theme === "light" ? "text-black" : "text-white"}`}>Intégration de systèmes connectés.</p>
+                    <p className={`text-sm md:text-base lg:text-lg ${theme === "light" ? "text-black" : "text-white"}`}>Réception TVSAT Starlink.</p>
+                    <p className={`text-sm md:text-base lg:text-lg ${theme === "light" ? "text-black" : "text-white"}`}>Intrusion.</p>
+                    <p className={`text-sm md:text-base lg:text-lg ${theme === "light" ? "text-black" : "text-white"}`}>Incendie</p>
                 </motion.div>
             </motion.div>
 
             {/* Second Card */}
             <motion.div 
-                className="card flex flex-col lg:flex-row-reverse bg-base-100 shadow-xl"
+                className={`card flex flex-col lg:flex-row-reverse ${theme === "light" ? "bg-base-100" : "bg-gray-700"} shadow-xl`}
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true, amount: 0.2 }}
@@ -62,11 +66,11 @@ const Two = () => {
                     />
                 </motion.div>
                 <motion.div className="card-body w-full lg:w-1/2 p-6" variants={fadeInFromLeft}>
-                    <h2 className="card-title text-xl md:text-2xl lg:text-3xl mb-4">Tertiaire</h2>
-                    <p className="text-sm md:text-base lg:text-lg">Installations Electriques</p>
-                    <p className="text-sm md:text-base lg:text-lg">Incendie</p>
-                    <p className="text-sm md:text-base lg:text-lg">Intrusion</p>
-                    <p className="text-sm md:text-base lg:text-lg">Câblage réseaux</p>
+                    <h2 className={`card-title text-xl md:text-2xl lg:text-3xl mb-4 ${theme === "light" ? "text-black" : "text-white"}`}>Tertiaire</h2>
+                    <p className={`text-sm md:text-base lg:text-lg ${theme === "light" ? "text-black" : "text-white"}`}>Installations Electriques</p>
+                    <p className={`text-sm md:text-base lg:text-lg ${theme === "light" ? "text-black" : "text-white"}`}>Incendie</p>
+                    <p className={`text-sm md:text-base lg:text-lg ${theme === "light" ? "text-black" : "text-white"}`}>Intrusion</p>
+                    <p className={`text-sm md:text-base lg:text-lg ${theme === "light" ? "text-black" : "text-white"}`}>Câblage réseaux</p>
                 </motion.div>
             </motion.div>
         </div>

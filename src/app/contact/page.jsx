@@ -25,7 +25,7 @@ const Contact = () => {
   };
 
   return (
-    <div id="two" className="flex-1 flex justify-center mt-12">
+    <div id="two" className="flex-1 flex justify-center pt-24"> {/* Added pt-24 for padding-top */}
       <div className="card bg-base-100 w-full max-w-sm shadow-2xl p-6">
         <form onSubmit={handleSubmit} className="card-body">
           <h1 className="text-lg font-semibold text-center mb-4">

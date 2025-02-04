@@ -11,7 +11,7 @@ const Homepage = () => {
             
             <Two/>
             <About/>
-           
+           <Footer/>
            
            
         </div>
