@@ -48,8 +48,9 @@ const Banner = () => {
                         backgroundColor: 'rgba(0, 0, 0, 0.5)',
                         borderRadius: '8px',
                     }}>
-                        Électricien situé sur Morzine, Les Gets, Cluses, Chamonix et Megève
+                       
                     </p>
+                    <p className='text-xl font-bold mt-5'>Électricien situé sur Morzine, Les Gets, Cluses, Chamonix et Megève </p> 
 
                     {/* Buttons */}
                     <div style={{ marginTop: '1rem', display: 'flex', gap: '1rem', justifyContent: 'center' }}>

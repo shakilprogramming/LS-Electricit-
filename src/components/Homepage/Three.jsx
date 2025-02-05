@@ -4,12 +4,12 @@ import Link from 'next/link'; // Import the Link component
 const Three = () => {
     return (
         <div
-            className="hero"
+            className="hero mt-5 "
             style={{
                 backgroundImage: "url('/assets/images/about_us/root3.jpg')", // Set the background image
                 backgroundSize: 'cover', // Ensures the image covers the container
                 backgroundPosition: 'center', // Centers the image
-                height: '500px', // Medium-sized height (adjust as needed)
+                height: '600px', // Medium-sized height (adjust as needed)
                 width: '100%', // Set width to 100%
             }}
         >
@@ -18,14 +18,14 @@ const Three = () => {
                 <div className="">
                     <h1 className="mb-5 text-5xl font-bold">Électricité générale et industriels</h1>
                     <p className="mb-5">
-                        Vous recherchez un professionnel pour vos travaux d'électricité générale et industrielle ?
+                    Vous recherchez un professionnel pour vos travaux d'électricité générale et industrielle ?     
                     </p>
                     <p className="mb-5">
-                        Notre équipe met son expertise à votre service pour répondre à vos besoins
+                    Notre équipe met son expertise à votre service pour répondre à vos besoins 
                     </p>
                     <p>
-                        Tout en respectant vos envies et votre budget.
-                        Nous réalisons des devis gratuits pour tous vos projets électriques.
+                    Tout en respectant vos envies et votre budget.
+                    Nous réalisons des devis gratuits pour tous vos projets électriques.
                     </p>
                    
                     <div style={{ marginTop: '1rem', display: 'flex', gap: '1rem', justifyContent: 'center' }}>
