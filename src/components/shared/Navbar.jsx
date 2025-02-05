@@ -18,15 +18,15 @@ const Navbar = () => {
 
     return (
         <nav className="navbar fixed top-0 z-10 bg-black/40 backdrop-blur-sm w-full">
-            <div className="container mx-auto flex items-center justify-between px-4 md:px-8 py-2">
+            <div className="container mx-auto flex items-center justify-between px-2 md:px-3 py-2">
                 {/* Logo and Brand Name */}
                 <div className="flex items-center">
                     <Link href="/" className="flex items-center">
                         <Image 
                             src="/assets/ben.JPG" 
                             alt="Logo" 
-                            width={80} 
-                            height={40} 
+                            width={60} 
+                            height={30} 
                             className="rounded-lg"
                         />
                         <span className="ml-2 text-2xl font-bold text-white">LS Electricité</span>
@@ -84,8 +84,8 @@ const Navbar = () => {
             </div>
 
             {/* Mobile Menu Dropdown */}
-            <div id="mobile-menu" className="lg:hidden hidden bg-black/80 backdrop-blur-sm w-full">
-                <ul className="flex flex-col items-center py-4">
+            <div id="mobile-menu" className="lg:hidden hidden bg-black/30 backdrop-blur-sm w-full text-center pl-4">
+                <ul className="flex flex-col items-center py-2">
                     {navItems.map((item, index) => (
                         <li key={index} className="w-full text-center">
                             <Link 

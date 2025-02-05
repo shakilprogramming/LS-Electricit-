@@ -15,12 +15,12 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   title: {
-    default: "Electronics,Electricité ",
+    default: "LS Electricité",
     template: "%s | Electricité ",
   },
   description: "Your one-stop shop for electronics .",
   openGraph: {
-    title: "Electricité ",
+    title: "LS Electricité ",
     description: "Your one-stop shop for electronics,Électricité entreprise à cluses,Electricite à cluses,Électricité générale à cluses.",
     images: "/og-image.png",
   },
