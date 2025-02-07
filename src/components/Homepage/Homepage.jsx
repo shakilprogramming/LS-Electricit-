@@ -6,6 +6,7 @@ import Two from './Two';
 import Three from './Three';
 import Dream from './Dream';
 import Footer from './Footer';
+import Lal from './Lal';
 
 const Homepage = () => {
     return (
@@ -14,8 +15,10 @@ const Homepage = () => {
             <Three/>
             
             <Two/>
+            <Lal/>
             <About/>
             <Dream/>
+
         
            <Footer/>
            

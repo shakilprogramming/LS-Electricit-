@@ -32,17 +32,17 @@ const About = () => {
   };
 
   return (
-    <div id="one" className="flex flex-col lg:flex-row items-center justify-between min-h-screen bg-base-200 p-6">
+    <div id="one" className="flex flex-col lg:flex-row items-center justify-between min-h-screen bg-base-100 p-6">
       {/* Left Section (Address + Map) */}
       <motion.div 
-        className="text-center lg:text-left flex-1 p-6"
+        className="text-center lg:text-left flex-1 p-3"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.2 }}
         variants={fadeInFromLeft}
       >
    
-        <div id="one" className="flex flex-col lg:flex-row items-center justify-between min-h-screen bg-base-200 p-6">
+        <div id="one" className="flex flex-col lg:flex-row items-center justify-between min-h-screen bg-base-100 p-2">
       {/* Left Section (Address + Contact Info) */}
       <div className="text-center lg:text-left flex-1 p-6">
         <h1 className="text-3xl font-bold text-red-500">Nos Coordonnées</h1>
@@ -91,12 +91,15 @@ const About = () => {
         variants={fadeInFromRight}
       >
         <div className="card bg-base-100 w-full max-w-sm shadow-2xl p-6">
+           <div>
+             <h1 className='text-red-400 text-4xl font-bold'>Contactez - Nous</h1>
+           </div>
           <form onSubmit={handleSubmit} className="card-body">
             <input type="hidden" name="access_key" value="7ffe071e-7c2b-4dae-9372-bc157b60eca0" />
 
             <div className="form-control">
               <label className="label" htmlFor="name">
-                <span className="label-text">Name</span>
+                <span className="label-text">Nom</span>
               </label>
               <input
                 id="name"
@@ -124,7 +127,7 @@ const About = () => {
 
             <div className="form-control">
               <label className="label" htmlFor="subject">
-                <span className="label-text">Subject</span>
+                <span className="label-text">Obej</span>
               </label>
               <input
                 id="subject"
@@ -152,7 +155,7 @@ const About = () => {
 
             <div className="form-control mt-6">
               <button type="submit" className="btn btn-primary w-full">
-                Submit
+              Envoyer
               </button>
             </div>
           </form>

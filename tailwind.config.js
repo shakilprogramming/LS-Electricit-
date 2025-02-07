@@ -1,3 +1,4 @@
+// tailwind.config.js
 module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
@@ -28,5 +29,6 @@ module.exports = {
         },
       },
     ],
+    defaultTheme: "light", // Ensure the default theme is "light"
   },
 };
