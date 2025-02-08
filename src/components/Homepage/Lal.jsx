@@ -22,7 +22,7 @@ const Lal = () => {
       <h1 className='text-white  text-5xl mt-2 font-bold text-start'>Partenaire avec</h1>
        
     </div>
-      <div className="w-1/2 "> {/* Container to control image size */}
+      <div className="w-1/2 ml-12 mt-8"> {/* Container to control image size */}
             <Image
               src="/assets/images/about_us/root9.jpg"
               alt="Logo"
