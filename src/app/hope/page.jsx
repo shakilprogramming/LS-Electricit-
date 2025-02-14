@@ -19,7 +19,7 @@ const Hope = () => {
 
   return (
     <div className="services flex flex-col items-center mt-28 bg-red-100 text-black w-full">
-      <h1 className="text-center text-4xl font-bold mb-6 mt-12">Electrician Sallanches</h1>
+      <h1 className="text-center text-4xl font-bold mb-6 mt-12">Électricien situé sur Morzine, Les Gets, Cluses, Chamonix et Megève</h1>
       {/* <h1>TV internet     
       </h1>
       Particuliers & Professionnels

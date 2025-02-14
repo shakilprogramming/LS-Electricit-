@@ -59,12 +59,12 @@ const About = () => {
 
           <div className="flex items-center gap-2 py-2">
             <FaPhone className="text-green-600 text-xl" />
-            <p className="text-red-500">+33 6 12 34 56 78</p>
+            <p className="text-red-500">+33 6 51 62 23 50</p>
           </div>
 
           <div className="flex items-center gap-2 py-2">
             <MdEmail className="text-red-500 text-xl" />
-            <p className="text-red-500">example@email.com</p>
+            <p className="text-red-500">ls_elec@yahoo.com</p>
           </div>
 
           <p className="text-red-500">8 rue claude hugard, Cluses 74300</p>

@@ -44,8 +44,8 @@ const contact = () => {
    
         <div id="one" className="flex flex-col lg:flex-row items-center justify-between min-h-screen bg-base-100 p-6">
       {/* Left Section (Address + Contact Info) */}
-      <div className="text-center lg:text-left flex-1 p-6">
-        <h1 className="text-3xl font-bold text-red-500">Nos Coordonnées</h1>
+      <div className="text-center lg:text-left flex-1 p-6 mt-32">
+        <h1 className="text-3xl font-bold text-red-500 mt-32">Nos Coordonnées</h1>
 
         <div className="flex items-center gap-2 py-2">
           <FaFacebookF className="text-blue-600 text-xl" />
@@ -54,12 +54,12 @@ const contact = () => {
 
         <div className="flex items-center gap-2 py-2">
           <FaPhone className="text-green-600 text-xl" />
-          <p className='text-red-500'>+33 6 12 34 56 78</p> {/* Replace with actual phone number */}
+          <p className='text-red-500'>+33 6 51 62 23 50</p> {/* Replace with actual phone number */}
         </div>
 
         <div className="flex items-center gap-2 py-2">
           <MdEmail className="text-red-500 text-xl" />
-          <p className='text-red-500'>example@email.com</p> {/* Replace with actual email */}
+          <p className='text-red-500'>ls_elec@yahoo.com</p> {/* Replace with actual email */}
         </div>
 
         <p className='text-red-500' >8 rue claude hugard, Cluses 74300</p>
@@ -67,7 +67,7 @@ const contact = () => {
         <div>
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2642.4662133575303!2d6.577558311541068!3d46.05825149348699!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478c072007f91b9b%3A0x87942d499311d476!2s8%20Rue%20Claude%20Hugard%2C%2074300%20Cluses%2C%20France!5e1!3m2!1sen!2sbd!4v1738468850764!5m2!1sen!2sbd"
-            width="600"
+            width="400"
             height="450"
             style={{ border: 0 }}
             allowFullScreen

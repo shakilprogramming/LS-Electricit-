@@ -3,7 +3,7 @@ import Link from 'next/link'; // Import the Link component
 
 const Page = () => {
     return (
-        <div className="hero bg-base-200 min-h-screen">
+        <div className="hero bg-gray-200 min-h-screen text-black">
         <div className="hero-content text-center">
           <div className="">
             <h1 className="text-5xl font-bold">Électricité générale</h1>
@@ -28,6 +28,10 @@ const Page = () => {
         <p>✅ Une équipe familiale, soudée et passionnée</p>
         <p>✅ Un travail soigné, sécurisé et conforme aux normes</p>
         <p>✅ Une réactivité et une disponibilité exemplaires</p>
+        <p>diplômé en :</p>
+         <p>✅ CAP Électricité</p>
+        <p>✅ Bac Pro MELEC (Métiers de l'Électricité et de ses Environnements Connectés)</p>
+       <p>✅ BTS Électrotechnique</p>
         <p className='mt-4'> Besoin d’un électricien expérimenté ?
         Contactez-nous dès aujourd’hui pour un devis gratuit et une intervention rapide </p>
        </div>
