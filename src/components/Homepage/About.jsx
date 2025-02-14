@@ -32,7 +32,7 @@ const About = () => {
   };
 
   return (
-    <div className="container mx-auto px-4 py-10 bg-slate-100">
+    <div className=" px-4 py-10 bg-slate-100">
       <div className="flex flex-col lg:grid lg:grid-cols-2 gap-8 items-center min-h-screen bg-base-100">
         {/* Left Section - Contact Info & Map */}
         <motion.div

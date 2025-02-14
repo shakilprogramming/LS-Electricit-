@@ -32,7 +32,7 @@ const contact = () => {
   };
 
   return (
-    <div id="one" className="flex flex-col lg:flex-row items-center justify-between min-h-screen bg-base-200 p-6">
+    <div id="one" className="flex flex-col lg:flex-row items-center justify-between min-h-screen bg-base-100 p-6">
       {/* Left Section (Address + Map) */}
       <motion.div 
         className="text-center lg:text-left flex-1 p-6"
@@ -42,7 +42,7 @@ const contact = () => {
         variants={fadeInFromLeft}
       >
    
-        <div id="one" className="flex flex-col lg:flex-row items-center justify-between min-h-screen bg-base-200 p-6">
+        <div id="one" className="flex flex-col lg:flex-row items-center justify-between min-h-screen bg-base-100 p-6">
       {/* Left Section (Address + Contact Info) */}
       <div className="text-center lg:text-left flex-1 p-6">
         <h1 className="text-3xl font-bold text-red-500">Nos Coordonnées</h1>

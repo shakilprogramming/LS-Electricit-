@@ -29,7 +29,7 @@ const Navbar = () => {
               height={30}
               className="rounded-lg"
             />
-            <span className="ml-2 text-2xl font-bold text-white">LS Electricité</span>
+            <span className="ml-2 text-3xl font-bold text-white">LS Electricité</span>
           </Link>
         </div>
 

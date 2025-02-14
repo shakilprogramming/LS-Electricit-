@@ -3,7 +3,7 @@ import { faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons";
 import Link from "next/link";
 const Footer = () => {
     return (
-        <footer className="footer max-w-screen-2xl mx-auto bg-base-300 bg-base-100/60  text-base-content p-10">
+        <footer className="footer max-w-screen-2xl  mx-auto bg-base-300 bg-base-100/60  text-base-content p-10">
         <nav>
           <h6 className="footer-title">Services</h6>
         
@@ -11,7 +11,6 @@ const Footer = () => {
         </nav>
         <nav>
           <h6 className="footer-title">Company</h6>
-          
           
         </nav>
         <nav>
