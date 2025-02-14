@@ -96,7 +96,7 @@ const contact = () => {
 
             <div className="form-control">
               <label className="label" htmlFor="name">
-                <span className="label-text">Name</span>
+                <span className="label-text">Nom</span>
               </label>
               <input
                 id="name"
@@ -124,7 +124,7 @@ const contact = () => {
 
             <div className="form-control">
               <label className="label" htmlFor="subject">
-                <span className="label-text">Subject</span>
+                <span className="label-text">Objet</span>
               </label>
               <input
                 id="subject"
@@ -152,7 +152,7 @@ const contact = () => {
 
             <div className="form-control mt-6">
               <button type="submit" className="btn btn-primary w-full">
-                Submit
+              Envoyer
               </button>
             </div>
           </form>

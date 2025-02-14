@@ -63,7 +63,7 @@ const About = () => {
           </div>
 
           <div className="flex items-center gap-2 py-2">
-            <MdEmail className="text-red-500 text-xl" />
+            <MdEmail className=" text-xl" />
             <p className="text-red-500">ls_elec@yahoo.com</p>
           </div>
 
@@ -90,7 +90,8 @@ const About = () => {
           variants={fadeInFromRight}
         >
           <div className="card bg-base-100 w-full max-w-md shadow-2xl p-6">
-            <h1 className="text-red-400 text-3xl font-bold mb-5">Contactez - Nous</h1>
+          <h1 className="text-amber-800 text-2xl  whitespace-nowrap mt-4 m-0 p-4 inline-block bg-white/50 rounded-lg [text-shadow:2px_2px_4px_rgba(0,0,0,0.5)]italic mb-5">Contactez - Nous</h1>
+
             <form onSubmit={handleSubmit} className="card-body">
               <input
                 type="hidden"

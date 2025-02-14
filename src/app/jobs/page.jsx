@@ -8,9 +8,9 @@ const page = () => {
   return (
     <div className="bg-white text-gray-500 text-center mt-20"> 
      <div className='text-black max-w-screen-2xl mx-auto w-full whitespace-nowrap mt-4 m-0 p-4 inline-block bg-black/50 rounded-lg [text-shadow:2px_2px_4px_rgba(0,0,0,0.5)]'>
-  <h1 className='text-center text-5xl pt-10'> Remise en norme électrique à Marnaz</h1>
-  <ul className='pl-6 list-disc '> 
-    <li className='text-3xl'>
+  <h1 className='text-center text-5xl pt-10 sm:text-4xl md:text-5xl'> Remise en norme électrique à Marnaz</h1>
+  <ul className='pl-6 list-disc sm:pl-6 '> 
+    <li className='text-lg sm:text-2xl md:text-3xl leading-relaxed'>
       • Remplacement les portes fusibles <br />
       • Remplacement le tableau électrique <br />
       • Remise en norme NFC 15 100 <br />
@@ -63,21 +63,20 @@ const page = () => {
         </div>
 
         <div>
-          <div className='text-black max-w-screen-2xl mx-auto w-full whitespace-nowrap mt-4 m-0 p-4 inline-block bg-black/50 rounded-lg [text-shadow:2px_2px_4px_rgba(0,0,0,0.5)]'>
-          <h1 className='text-center text-5xl pt-10'> Motorisations d’un volet basculant au centrale EDF</h1>
-          <ul className='pl-6  list-disc '>
-            <li className='text-3xl'>
-            Etude d’installation  <br />
-            Câblage la platine 
-            <br />
-            Capteur de température(4-20mA) <br/>
+        <div className="text-black max-w-screen-2xl mx-auto w-full mt-4 p-4 bg-black/50 rounded-lg [text-shadow:2px_2px_4px_rgba(0,0,0,0.5)]">
+  <h1 className="text-center text-3xl sm:text-4xl md:text-5xl pt-6">
+    Motorisations d’un volet basculant au centrale EDF
+  </h1>
+  <ul className="pl-4 sm:pl-6 list-disc mt-4">
+    <li className="text-base sm:text-lg md:text-2xl leading-relaxed">
+      Etude d’installation <br />
+      Câblage la platine <br />
+      Capteur de température(4-20mA) <br />
+      Logiciel Machine expert basic (Schneider)
+    </li>
+  </ul>
+</div>
 
-            Logiciel Machine expert basic (Schneider)
-
-
-            </li>
-          </ul>
-          </div>
 
           <div className="carousel w-full mt-2"> {/* Adds margin-top to create space below the title */}
             {/* Slide 1 */}
@@ -131,9 +130,9 @@ const page = () => {
 
       <div className='max-w-screen-2xl mx-auto'>
        <div className='text-black max-w-screen-2xl mx-auto w-full whitespace-nowrap mt-4 m-0 p-4 inline-block bg-black/50 rounded-lg [text-shadow:2px_2px_4px_rgba(0,0,0,0.5)]'>
-       <h1 className='text-center text-5xl pt-10'> Installation Portail battant à Bonneville</h1>
-        <ul className='pl-6  list-disc'>
-          <li className='text-3xl'>
+       <h1 className='text-center text-3xl sm:text-4xl md:text-5xl pt-6'> Installation Portail battant à Bonneville</h1>
+        <ul className='pl-4 sm:pl-6 list-disc text-left'>
+          <li className='text-lg sm:text-2xl md:text-3xl leading-relaxed'>
             Etude <br />
             Installation<br />
             Programmation
