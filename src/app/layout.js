@@ -1,4 +1,3 @@
-// layout.js
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/shared/Navbar";
@@ -17,20 +16,44 @@ const geistMono = Geist_Mono({
 export const metadata = {
   title: {
     default: "LS Electricité",
-    template: "%s | Electricité ",
+    template: "%s | Electricité",
   },
-  description: "Your one-stop shop for electronics .",
+  description: "Your one-stop shop for electronics.",
+  keywords: ["electronics", "LS Electricité", "gadgets", "tech", "Cluses electrician"],
   openGraph: {
-    title: "LS Electricité ",
-    description: "Your one-stop shop for electronics,Électricité entreprise à cluses,Electricite à cluses,Électricité générale à cluses.",
-    images: "/og-image.png",
+    title: "LS Electricité",
+    description: "Your one-stop shop for electronics, Électricité entreprise à Cluses, Electricite à Cluses, Électricité générale à Cluses.",
+    images: "https://www.lselectricite.com/og-image.png",
+    url: "https://www.lselectricite.com",
+    type: "website",
+  },
+  robots: {
+    index: true,
+    follow: true,
   },
 };
 
 export default function RootLayout({ children }) {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: "LS Electricité",
+    url: "https://www.lselectricite.com",
+    logo: "https://www.lselectricite.com/logo.png",
+    description: "Your one-stop shop for electronics.",
+  };
+
   return (
-    <html lang="en" data-theme="light">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+    <html lang="fr" data-theme="light">
+      <head>
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+        <script type="application/ld+json">
+          {JSON.stringify(structuredData)}
+        </script>
+      </head>
+      <body className={`${geistSans.variable} ${geistMono.variable} font-sans antialiased`}>
         <ThemeProvider>
           <Navbar />
           {children}
