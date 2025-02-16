@@ -19,7 +19,7 @@ export const metadata = {
     template: "%s | Electricité",
   },
   description: "Your one-stop shop for electronics.",
-  keywords: ["electronics", "LS Electricité", "gadgets", "tech", "Cluses electrician"],
+  keywords: ["electronics", "LS Electricité", "gadgets","Ls électricité"," Électricité à Cluses","Electricité", "tech", "Cluses electrician"],
   openGraph: {
     title: "LS Electricité",
     description: "Your one-stop shop for electronics, Électricité entreprise à Cluses, Electricite à Cluses, Électricité générale à Cluses.",
