@@ -1,4 +1,3 @@
-// shared/components/Navbar.jsx
 "use client";
 import Image from "next/image";
 import Link from "next/link";
@@ -12,7 +11,6 @@ const Navbar = () => {
     { title: "Accueil", path: "/" },
     { title: "Réalisations", path: "/jobs" },
     { title: "Nos activités", path: "/hope" },
-
     { title: "Contact", path: "/contact" },
   ];
 
@@ -64,7 +62,7 @@ const Navbar = () => {
               <li key={index}>
                 <Link
                   href={item.path}
-                  className="text-white hover:text-gray-400 transition-colors duration-200"
+                  className="text-white hover:text-yellow-400 text-xl transition-colors duration-200" // Increased font size
                 >
                   {item.title}
                 </Link>
@@ -90,7 +88,7 @@ const Navbar = () => {
             <li key={index} className="w-full text-center">
               <Link
                 href={item.path}
-                className="block py-2 text-white hover:text-gray-400 transition-colors duration-200"
+                className="block py-2 text-white hover:text-yellow-400 text-xl transition-colors duration-200" // Increased font size
               >
                 {item.title}
               </Link>

@@ -33,8 +33,8 @@ const page = () => {
             <Image
               src="/assets/images/about_us/root6.jpg"
               alt="Slide 1"
-              width={900} // Set appropriate width
-              height={800} // Set appropriate height
+              width={800} // Set appropriate width
+              height={700} // Set appropriate height
               className="rounded-lg w-full h-full object-cover" // Make image cover the container
             />
             <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
@@ -48,13 +48,13 @@ const page = () => {
             <Image
               src="/assets/images/about_us/root17.jpg"
               alt="Slide 2"
-              width={800}
+              width={700}
               height={600}
               className="rounded-lg w-full h-full object-cover"
             />
-            <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-              <a href="#slide2" className="btn btn-circle">❮</a>
-              <a href="#slide3" className="btn btn-circle">❯</a>
+            <div className="absolute left-5 right-5 top-1/4 flex -translate-y-1/2 transform justify-between">
+              <a href="#slide1" className="btn btn-circle">❮</a>
+              <a href="#slide2" className="btn btn-circle">❯</a>
             </div>
           </div>
 
@@ -95,7 +95,7 @@ const page = () => {
             </div>
 
             {/* Slide 2 */}
-            <div id="slide4" className="carousel-item relative w-full h-2/3">
+            <div id="slide4" className="carousel-item relative w-full h-1/4">
               <Image
                 src="/assets/images/about_us/root11.jpg"
                 alt="Slide 4"
@@ -103,7 +103,7 @@ const page = () => {
                 height={600}
                 className="rounded-lg w-full h-full object-cover"
               />
-              <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+              <div className="absolute left-5 right-5 top-1/3 flex -translate-y-1/2 transform justify-between">
                 <a href="#slide3" className="btn btn-circle">❮</a>
                 <a href="#slide5" className="btn btn-circle">❯</a>
               </div>
@@ -113,10 +113,10 @@ const page = () => {
                 src="/assets/images/about_us/root14.jpg"
                 alt="Slide 5"
                 width={800}
-                height={600}
+                height={400}
                 className="rounded-lg w-full h-full object-cover"
               />
-              <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+              <div className="absolute left-5 right-5 top-1/3 flex -translate-y-1/2 transform justify-between">
                 <a href="#slide3" className="btn btn-circle">❮</a>
                 <a href="#slide4" className="btn btn-circle">❯</a>
               </div>
