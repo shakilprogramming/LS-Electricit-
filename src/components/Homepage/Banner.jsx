@@ -13,148 +13,35 @@ const Carousel = dynamic(
 
 const Banner = () => {
     return (
-        <div style={{ marginTop: '60px' }}> {/* Adjust the margin value as needed */}
+        <div className="mt-16">
             <Carousel>
-                <div style={{ position: 'relative', textAlign: 'center', color: 'white' }}>
-                    <img src={img6.src} alt="Banner 7" />
-                    <div style={{
-                        position: 'absolute',
-                        top: '50%',
-                        left: '50%',
-                        transform: 'translate(-50%, -50%)',
-                        width: '100%',
-                    }}>
-                        <div style={{
-                            display: 'flex',
-                            flexDirection: 'column', // Stack vertically by default
-                            alignItems: 'center',
-                            justifyContent: 'center',
-                            gap: '1rem', // Space between elements
-                        }}>
-                            <h1 style={{
-                                fontSize: '2.5rem',
-                                fontWeight: 'bold',
-                                textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)',
-                                whiteSpace: 'nowrap',
-                                margin: '0',
-                                padding: '1rem',
-                                lineHeight: '1.2',
-                                display: 'inline-block',
-                                backgroundColor: 'rgba(0, 0, 0, 0.5)',
-                                borderRadius: '8px',
-                            }}>
-                                ÉLECTRICITÉ GÉNÉRALE ET INDUSTRIELS
+                {[img6, img8].map((img, index) => (
+                    <div key={index} className="relative text-center text-white">
+                        <img src={img.src} alt={`Banner ${index + 7}`} />
+                        <div className="absolute inset-0 flex flex-col items-center justify-center gap-4">
+                            <h1 className="text-2xl md:text-4xl font-bold text-shadow-lg bg-black bg-opacity-50 rounded-lg p-4">
+                                {index === 0 ? 'ÉLECTRICITÉ GÉNÉRALE ET INDUSTRIELS' : 'UNE URGENCE ?'}
                             </h1>
-                            <p className="text-base whitespace-nowrap mt-4 m-0 p-4 inline-block bg-black/50 rounded-lg [text-shadow:2px_2px_4px_rgba(0,0,0,0.5)]">
+                            <p className="text-base md:text-lg whitespace-nowrap bg-black bg-opacity-50 rounded-lg p-4 text-shadow-lg">
                                 Électricien situé sur Morzine, Les Gets, Cluses, Chamonix et Megève
                             </p>
-                        </div>
-                        <div style={{ marginTop: '1rem', display: 'flex', gap: '1rem', justifyContent: 'center' }}>
-                            <Link href="/contact" passHref>
-                                <button style={{
-                                    backgroundColor: '#c53030',
-                                    color: 'black',
-                                    padding: '0.75rem 1.5rem',
-                                    borderRadius: '8px',
-                                    fontSize: '1rem',
-                                    fontWeight: 'bold',
-                                    border: 'none',
-                                    cursor: 'pointer',
-                                    transition: '0.3s',
-                                }}>
-                                    <p>URGENCE DEPANNAGE</p>
-                                    24H /24 ET 7J/7
-                                </button>
-                            </Link>
-                            <Link href="/enough" passHref>
-                                <button style={{
-                                    backgroundColor: '#ffff',
-                                    color: 'black',
-                                    padding: '0.75rem 1.5rem',
-                                    borderRadius: '8px',
-                                    fontSize: '1rem',
-                                    fontWeight: 'bold',
-                                    border: 'none',
-                                    cursor: 'pointer',
-                                    transition: '0.3s',
-                                }}>
-                                    <p>DEVIS GRATUIT</p>
-                                    <h1>RAPIDE</h1>
-                                </button>
-                            </Link>
+                            <div className="mt-4 flex gap-4 justify-center">
+                                <Link href="/contact" passHref>
+                                    <button className="bg-red-600 text-black py-2 px-6 rounded-lg text-base font-bold transition duration-300 hover:bg-red-700">
+                                        <p>URGENCE DEPANNAGE</p>
+                                        24H /24 ET 7J/7
+                                    </button>
+                                </Link>
+                                <Link href="/enough" passHref>
+                                    <button className="bg-white text-black py-2 px-6 rounded-lg text-base font-bold transition duration-300 hover:bg-gray-200">
+                                        <p>DEVIS GRATUIT</p>
+                                        <h1>RAPIDE</h1>
+                                    </button>
+                                </Link>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div style={{ position: 'relative', textAlign: 'center', color: 'white' }}>
-                    <img src={img8.src} alt="Banner 8" />
-                    <div style={{
-                        position: 'absolute',
-                        top: '50%',
-                        left: '50%',
-                        transform: 'translate(-50%, -50%)',
-                        width: '100%',
-                    }}>
-                        <div style={{
-                            display: 'flex',
-                            flexDirection: 'column', // Stack vertically by default
-                            alignItems: 'center',
-                            justifyContent: 'center',
-                            gap: '1rem', // Space between elements
-                        }}>
-                            <h1 style={{
-                                fontSize: '4rem',
-                                fontWeight: 'bold',
-                                textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)',
-                                whiteSpace: 'nowrap',
-                                margin: '0',
-                                padding: '1rem',
-                                lineHeight: '1.2',
-                                display: 'inline-block',
-                                backgroundColor: 'rgba(0, 0, 0, 0.5)',
-                                borderRadius: '8px',
-                            }}>
-                                UNE URGENCE ?
-                            </h1>
-                            <p className="text-base whitespace-nowrap mt-5 m-0 p-4 inline-block bg-black/50 rounded-lg [text-shadow:2px_2px_4px_rgba(0,0,0,0.5)]">
-                                Électricien situé sur Morzine, Les Gets, Cluses, Chamonix et Megève
-                            </p>
-                        </div>
-                        <div style={{ marginTop: '1rem', display: 'flex', gap: '1rem', justifyContent: 'center' }}>
-                            <Link href="/contact" passHref>
-                                <button style={{
-                                    backgroundColor: '#c53030',
-                                    color: 'black',
-                                    padding: '0.75rem 1.5rem',
-                                    borderRadius: '8px',
-                                    fontSize: '1rem',
-                                    fontWeight: 'bold',
-                                    border: 'none',
-                                    cursor: 'pointer',
-                                    transition: '0.3s',
-                                }}>
-                                    <p>URGENCE DEPANNAGE</p>
-                                    24H /24 ET 7J/7
-                                </button>
-                            </Link>
-                            <Link href="/enough" passHref>
-                                <button style={{
-                                    backgroundColor: '#ffff',
-                                    color: 'black',
-                                    padding: '0.75rem 1.5rem',
-                                    borderRadius: '8px',
-                                    fontSize: '1rem',
-                                    fontWeight: 'bold',
-                                    border: 'none',
-                                    cursor: 'pointer',
-                                    transition: '0.3s',
-                                }}>
-                                    <p>DEVIS GRATUIT</p>
-                                    <h1>RAPIDE</h1>
-                                </button>
-                            </Link>
-                        </div>
-                    </div>
-                </div>
+                ))}
             </Carousel>
         </div>
     );
