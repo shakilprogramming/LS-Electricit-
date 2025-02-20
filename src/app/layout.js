@@ -40,6 +40,9 @@ export const metadata = {
     index: true,
     follow: true,
   },
+  verification: {
+    google: "topv8cJMu8GUh78xfN6MEV6c3KpPn5uvdQEVw80zR7Q", // GSC যাচাই কোড যোগ করা হয়েছে
+  },
 };
 
 export default function RootLayout({ children }) {
