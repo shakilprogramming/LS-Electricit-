@@ -18,11 +18,20 @@ export const metadata = {
     default: "LS Electricité",
     template: "%s | Electricité",
   },
-  description: "Your one-stop shop for electronics.",
-  keywords: ["electronics", "LS Electricité", "gadgets","Ls électricité"," Électricité à Cluses","Electricité", "tech", "Cluses electrician"],
+  description: "LS Electricité - Expert en électricité générale et industrielle à Cluses.",
+  keywords: [
+    "électricien Cluses",
+    "installation électrique",
+    "LS Electricité",
+    "entreprise électricité Cluses",
+    "tableau électrique",
+    "éclairage industriel",
+    "domotique",
+    "dépannage électrique",
+  ],
   openGraph: {
     title: "LS Electricité",
-    description: "Your one-stop shop for electronics, Électricité entreprise à Cluses, Electricite à Cluses, Électricité générale à Cluses.",
+    description: "Spécialiste en électricité générale et industrielle à Cluses.",
     images: "https://www.lselectricite.com/og-image.png",
     url: "https://www.lselectricite.com",
     type: "website",
@@ -36,11 +45,24 @@ export const metadata = {
 export default function RootLayout({ children }) {
   const structuredData = {
     "@context": "https://schema.org",
-    "@type": "Organization",
+    "@type": "Electrician",
     name: "LS Electricité",
     url: "https://www.lselectricite.com",
     logo: "https://www.lselectricite.com/logo.png",
-    description: "Your one-stop shop for electronics.",
+    description: "Spécialiste en électricité générale et industrielle à Cluses.",
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: "Votre adresse ici",
+      addressLocality: "Cluses",
+      postalCode: "74300",
+      addressCountry: "FR",
+    },
+    contactPoint: {
+      "@type": "ContactPoint",
+      telephone: "+33 6 XX XX XX XX",
+      contactType: "customer service",
+      availableLanguage: ["French"],
+    },
   };
 
   return (
