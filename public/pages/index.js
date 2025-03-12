@@ -5,10 +5,12 @@ export default function Home() {
     <>
       <Head>
         <meta name="google-site-verification" content="topv8cJMu8GUh78xfN6MEV6c3KpPn5uvdQEVw80zR7Q" />
-        <title>LS Electricité</title> {/* আপনার বিদ্যমান টাইটেল */}
+        <title>LS Electricité</title>
+        <link rel="icon" type="image/png" href="/favicon.png" />
+
       </Head>
       <div>
-        <h1>Welcome to LS Electricité</h1> {/* আপনার বিদ্যমান কনটেন্ট */}
+        <h1>Welcome to LS Electricité</h1>
       </div>
     </>
   );

@@ -47,7 +47,7 @@ const enough = () => {
               type="text"
               name="name"
               placeholder="Enter your name"
-              className="input input-bordered border-2 border-gray-300 focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-lg p-2"
+              className="input text-yellow-900  input-bordered border-2 border-gray-300 focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-lg p-2"
               required
             />
           </div>
@@ -61,7 +61,7 @@ const enough = () => {
               type="email"
               name="email"
               placeholder="Enter your email"
-              className="input input-bordered border-2 border-gray-300 focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-lg p-2"
+              className="input text-yellow-900  input-bordered border-2 border-gray-300 focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-lg p-2"
               required
             />
           </div>
@@ -75,7 +75,7 @@ const enough = () => {
               type="text"
               name="subject"
               placeholder="Enter the subject"
-              className="input input-bordered border-2 border-gray-300 focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-lg p-2"
+              className="input input-bordered text-yellow-900  border-2 border-gray-300 focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-lg p-2"
               required
             />
           </div>
@@ -88,7 +88,7 @@ const enough = () => {
               id="message"
               name="message"
               placeholder="Write your message"
-              className="textarea textarea-bordered border-2 border-gray-300 focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-lg p-2"
+              className="textarea text-yellow-900  textarea-bordered border-2 border-gray-300 focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-lg p-2"
               rows="4"
               required
             ></textarea>

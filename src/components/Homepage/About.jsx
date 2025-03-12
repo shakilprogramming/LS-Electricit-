@@ -108,7 +108,7 @@ const About = () => {
                   type="text"
                   name="name"
                   placeholder="Enter your name"
-                  className="input input-bordered w-full p-2 rounded-lg"
+                  className="input input-bordered text-yellow-900  w-full p-2 rounded-lg"
                   required
                 />
               </div>
@@ -122,7 +122,7 @@ const About = () => {
                   type="email"
                   name="email"
                   placeholder="Enter your email"
-                  className="input input-bordered w-full p-2 rounded-lg"
+                  className="input input-bordered text-yellow-900 w-full p-2 rounded-lg"
                   required
                 />
               </div>
@@ -136,7 +136,7 @@ const About = () => {
                   type="text"
                   name="subject"
                   placeholder="Enter the subject"
-                  className="input input-bordered w-full p-2 rounded-lg"
+                  className="input input-bordered text-yellow-900  w-full p-2 rounded-lg"
                   required
                 />
               </div>
@@ -149,7 +149,7 @@ const About = () => {
                   id="message"
                   name="message"
                   placeholder="Write your message"
-                  className="textarea textarea-bordered w-full p-2 rounded-lg"
+                  className="textarea text-yellow-900  textarea-bordered w-full p-2 rounded-lg"
                   rows="4"
                   required
                 ></textarea>
